@@ -6,7 +6,7 @@ consumer = KafkaConsumer(bootstrap_servers='ec2-18-234-161-165.compute-1.amazona
                                  auto_offset_reset='earliest',
                                  consumer_timeout_ms=1000)
 ##consumer.subscribe(['TestTopic1'])
-tp = TopicPartition('TestTopic1', 2)
+tp = TopicPartition('TestTopic1', 0)
 consumer.assign([tp])
 consumer.poll(1000)
 for message in consumer:
