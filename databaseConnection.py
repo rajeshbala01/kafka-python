@@ -5,7 +5,7 @@ import pyodbc
 server = 'tcp:database-1.cf2dqu6kr5nt.ap-south-1.rds.amazonaws.com,1433' 
 database = 'myProjectDB' 
 username = 'admin' 
-password = 'welcome123' 
+password = '*****' 
 cnxn = pyodbc.connect('DRIVER={SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 cursor = cnxn.cursor()
 
