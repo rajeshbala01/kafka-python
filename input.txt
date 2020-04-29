@@ -1,3 +1,1 @@
-Publish test message to Kafka
-test message 1
-test message 2
+Write new line 1
